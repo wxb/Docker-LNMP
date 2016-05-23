@@ -1,0 +1,33 @@
+nginx:
+    restart: always
+    image: bitnami/nginx
+    ports:
+        - "80:80"
+        - "443:443"
+    volumes:
+        - $HOME/workspace/app:/app
+        - $HOME/workspace/vhost.conf:/bitnami/nginx/conf/vhosts/dockerapp.conf
+        - $HOME/workspace/logs/nginx:/bitnami/nginx/logs
+    links:
+        - "phpfpm:dockerapp"
+        - mysql:database
+phpfpm:
+    restart: always
+    image: bitnami/php-fpm
+    expose:
+        - "9000"
+    volumes:
+        - $HOME/workspace/app:/app
+        - $HOME/workspace/logs/php-fpm:/bitnami/php-fpm/logs
+
+mysql:
+    restart: always
+    image: daocloud.io/wangxb/mysql:5.6
+    expose:
+        - "3306"
+    ports:
+        - "3306:3306"
+    volumes:
+        - $HOME/workspace/data:/var/lib/mysql
+    environment:
+        - MYSQL_ROOT_PASSWORD=root
