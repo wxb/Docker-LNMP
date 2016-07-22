@@ -21,9 +21,10 @@ LNMP-Docker 主要都是基于 [bitnami](https://github.com/bitnami) 所释放/�
 
 LNMP-Docker 是使用 `docker-compose` 应用编排进行的，在使用执行请确认你的系统中已经安装了：`docker` 和 `docker-compose`  
 
-  * 克隆 `$ git clone git@github.com:wxb/Docker-LNMP.git` 
-  * 修改名字 `$ mv Docker-LNMP workspace && cd workspace`
+  * 克隆 `$ git clone git@github.com:wxb/Docker-LNMP.git`
+  * 修改名字 `$ mv Docker-LNMP {项目名} && cd {项目名}}`
   * 拉取你的项目放到workspace目录下并改名app `$ git clone git@github.com:wxb/xxx.git && mv xxx app`
+  * 配置虚拟主机 `$ cp vhost-example.conf vhost.conf` 然后修改`vhost.conf`文件
   * 启动环境 `docker-compose up -d`
 
 
@@ -32,5 +33,3 @@ LNMP-Docker 是使用 `docker-compose` 应用编排进行的，在使用执行�
 LNMP-Docker 只是我在了解了docker之后进行的简单尝试，使用过程中还可能会出现很多的问题，后面我会逐步完善；不过现在我已经对docker技术充满了想法，只是相关知识的缺乏还不能更好的利用；待之后努力学习，争取用号docker，提升开发-发布环境一致性。
 
 同时，也尝试配合使用[daocloud.com](https://dashboard.daocloud.io/) 对项目进行docker形式的持续集成（CI）和持续发布（CD）。后期如果自己使用的这套构建流完善之后，我会写一篇进行详细介绍，欢迎大家使用
-
-
