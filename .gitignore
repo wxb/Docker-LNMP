@@ -4,3 +4,4 @@ logs
 data
 app
 .idea
+vhost.conf
