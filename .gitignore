@@ -3,6 +3,8 @@
 logs
 data
 app
+php-fpm/conf/php-fpm.conf
+php-fpm/conf/php.ini
 .idea
 vhost.conf
 .phpstorm.meta.php
