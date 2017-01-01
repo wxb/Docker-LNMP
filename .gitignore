@@ -4,6 +4,7 @@ data
 app
 php-fpm/conf/php-fpm.conf
 php-fpm/conf/php.ini
+logs
 !logs/nginx/README.md
 !logs/php-fpm/README.md
 .idea
