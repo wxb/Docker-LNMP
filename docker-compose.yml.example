@@ -18,6 +18,7 @@ phpfpm:
         - "9000"
     volumes:
         - $PWD/app:/app
+        - $PWD/php-fpm/conf:/bitnami/php-fpm/conf
         - $PWD/logs/php-fpm:/bitnami/php-fpm/logs
 
 mysql:
