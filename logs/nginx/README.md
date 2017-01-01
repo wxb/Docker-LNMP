@@ -1,0 +1,1 @@
+本文件夹存放的是nginx运行时的访问access日志和错误error日志
