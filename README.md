@@ -25,7 +25,7 @@ LNMP-Docker 是使用 `docker-compose` 应用编排进行的，在使用执行�
   * 修改名字 `$ mv Docker-LNMP {项目名} && cd {项目名}}`
   * 拉取你的项目放到workspace目录下并改名app `$ git clone git@github.com:wxb/xxx.git && mv xxx app`
   * 配置虚拟主机 `$ cp vhost-example.conf vhost.conf` 然后修改`vhost.conf`文件
-  * 在需要对`php`或者`php-fpm`进行个性配置时，相应配置文件在：`php-fpm/conf/php.ini`和`php-fpm/conf/php-fpm.conf`
+  * 在需要对`php`或者`php-fpm`进行个性配置时，将`php-fpm/conf/`目录下相应`*.example`复制一份改名为：`php-fpm/conf/php.ini`和`php-fpm/conf/php-fpm.conf`进行个性配置
   * 启动环境 `docker-compose up -d`
 
 
