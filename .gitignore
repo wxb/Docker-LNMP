@@ -1,9 +1,9 @@
 .DS_Store
 .idea
-data
 app
 php-fpm/conf/php-fpm.conf
 php-fpm/conf/php.ini
+!data/README.md
 logs
 !logs/nginx/README.md
 !logs/php-fpm/README.md
