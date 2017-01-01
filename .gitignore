@@ -3,6 +3,7 @@
 app
 php-fpm/conf/php-fpm.conf
 php-fpm/conf/php.ini
+data
 !data/README.md
 logs
 !logs/nginx/README.md
