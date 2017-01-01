@@ -5,3 +5,4 @@ data
 app
 .idea
 vhost.conf
+.phpstorm.meta.php
