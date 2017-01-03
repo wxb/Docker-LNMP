@@ -9,25 +9,29 @@ nginx:
         - $PWD/vhost.conf:/bitnami/nginx/conf/vhosts/dockerapp.conf
         - $PWD/logs/nginx:/bitnami/nginx/logs
     links:
-        - "phpfpm:dockerapp"
-        - mysql:database
+        - "phpfpm:phpfpm_machine"
+        - "mysql:mysql_machine"
 phpfpm:
     restart: always
     image: bitnami/php-fpm:5.6.18-0
+    ports:
+        - "9000:9000"
     expose:
         - "9000"
     volumes:
         - $PWD/app:/app
         - $PWD/php-fpm/conf:/bitnami/php-fpm/conf
         - $PWD/logs/php-fpm:/bitnami/php-fpm/logs
+    links:
+        - "mysql:mysql_machine"
 
 mysql:
     restart: always
     image: daocloud.io/wangxb/mysql:5.6
-    expose:
-        - "3306"
     ports:
         - "3306:3306"
+    expose:
+        - "3306"
     volumes:
         - $PWD/data:/var/lib/mysql
     environment:
