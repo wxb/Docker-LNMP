@@ -10,4 +10,5 @@ logs
 !logs/php-fpm/README.md
 .idea
 vhost.conf
+docker-compose.yml
 .phpstorm.meta.php
