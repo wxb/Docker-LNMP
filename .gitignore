@@ -13,4 +13,5 @@ vhost.conf
 docker-compose.yml
 .phpstorm.meta.php
 
-/composer-pkgs/vendor
+composer-pkgs
+!composer-pkgs/README.md
