@@ -60,7 +60,7 @@ LNMP-Docker 是使用 `docker-compose` 应用编排进行的，在使用执行�
   * 拉取你的项目放到workspace目录下并改名app `$ git clone git@github.com:wxb/xxx.git && mv xxx app`
   * 配置虚拟主机 `$ cp vhost-example.conf vhost.conf` 然后修改`vhost.conf`文件
   * 在需要对`php`或者`php-fpm`进行个性配置时，将`php-fpm/conf/`目录下相应`*.example`复制一份改名为：`php-fpm/conf/php.ini`和`php-fpm/conf/php-fpm.conf`进行个性配置
-  * 如果有通过composer需要安装的依赖, 请将依赖安装在**composer-pkgs**文件夹中,具体说明参见[composer-pkgs](./composer-pkgs/README.md)
+  * 如果有通过composer需要安装的依赖, 请将依赖安装在**composer-pkgs**文件夹中,具体说明参见[composer-pkgs](https://github.com/wxb/Docker-LNMP/tree/master/composer-pkgs)
   * 启动环境 `docker-compose up -d`
 
 
