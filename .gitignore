@@ -3,6 +3,9 @@
 app
 php-fpm/conf/php-fpm.conf
 php-fpm/conf/php.ini
+composer-pkgs
+!composer-pkgs/README.md
+!composer-pkgs/composer.*
 data
 !data/README.md
 logs
