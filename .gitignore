@@ -14,3 +14,4 @@ docker-compose.yml
 .phpstorm.meta.php
 composer-pkgs/*
 !composer-pkgs/README.md
+!composer-pkgs/composer.*
