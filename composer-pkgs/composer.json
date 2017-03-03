@@ -20,7 +20,8 @@
         "topthink/think-mongo": "^1.5",
         "topthink/think-captcha": "^1.0",
         "topthink/think-worker": "^1.0",
-        "monolog/monolog": "^1.22"
+        "monolog/monolog": "^1.22",
+        "rmccue/requests": "^1.7"
     },
     "extra": {
         "think-path": "thinkphp"
