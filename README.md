@@ -1,4 +1,8 @@
 # LNMP-Docker
+[![GitHub issues](https://img.shields.io/github/issues/wxb/Docker-LNMP.svg)](https://github.com/wxb/Docker-LNMP/issues)
+[![GitHub forks](https://img.shields.io/github/forks/wxb/Docker-LNMP.svg)](https://github.com/wxb/Docker-LNMP/network)
+[![GitHub stars](https://img.shields.io/github/stars/wxb/Docker-LNMP.svg)](https://github.com/wxb/Docker-LNMP/stargazers)
+[![Twitter](https://img.shields.io/twitter/url/https/github.com/wxb/Docker-LNMP.svg?style=social)](https://twitter.com/intent/tweet?text=Wow:&url=%5Bobject%20Object%5D)
 
 基于Docker容器技术，配置一个可分发、快速、简单、标准、统一的LNMP开发环境。
 
